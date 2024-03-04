@@ -37,28 +37,29 @@
 
 
 
-class Fruit{
-    public $name;
-    public $color;
+// class Fruit{
+//     public $name;
+//     public $color;
 
-    function set_name($name){
-        $this->name = $name;
-    }
+//     function set_name($name){
+//         $this->name = $name;
+//     }
 
-    function get_name(){
-        return $this->name;
-    }
-}
-$apple = new Fruit();
-$apple->set_name('Apple');
-echo $apple->get_name();
+//     function get_name(){
+//         return $this->name;
+//     }
+// }
+// $apple = new Fruit();
+// $apple->set_name('Apple');
+// echo $apple->get_name();
 
-$banana = new Fruit();
-$banana->set_name("Banana");
-echo $banana->get_name();
+// $banana = new Fruit();
+// $banana->set_name("Banana");
+// echo $banana->get_name();
 
-
-
+$arr = array(10,20,10,20,30,20,40);
+Natsort($arr);
+print_r ($arr);
 
 
 
