@@ -23,15 +23,6 @@ class studentinfo1{
         $student_data1 = file(self::$data_store1);
         file_put_contents(self::$data_store1,$this->csv(),FILE_APPEND);
     }
-    public static function display_studentinfo(){
-        $student_data1 = file(self::$dataa_store1);
-        echo "<b>ID NO | Name | Course | Phone</b><br>";
-        
-        foreach($student_data as $NewStudent){
-            list($ID,$Name,$Course,$Phone)=explode(",",trim($NewStudent));  
-            echo "$ID | $Name | $Course | $Phone <br>";          
-        }
-    }
 }
 
 

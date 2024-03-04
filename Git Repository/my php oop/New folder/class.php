@@ -1,30 +1,31 @@
 <?php
-class studentinfo1{
+
+class studentinfo{
     private $ID;
     private $Name;
     private $Course;
     private $Phone;
 
-    private static $data_store1="document1.txt";
-
-    function __construct($ID,$Name,$Course,$Phone)
-    {
-        $this->ID     = $ID;
-        $this->Name   = $Name;
+    private static $datastore = "document.txt";
+    
+    function __construct($ID,$Name,$Course,$Phone){
+        $this->ID = $ID; 
+        $this->Name = $Name;
         $this->Course = $Course;
-        $this->Phone  = $Phone;
+        $this->Phone = $Phone;
     }
 
     function csv(){
         return $this->ID.",".$this->Name.",".$this->Course.",".$this->Phone.PHP_EOL;
     }
-
+    
     function save(){
-        $student_data1 = file(self::$data_store1);
-        file_put_contents(self::$data_store1,$this->csv(),FILE_APPEND);
+        $student_data = file(self::$datastore);
+        file_put_contents(self::$datastore,$this->csv(),FILE_APPEND);
     }
+
     public static function display_studentinfo(){
-        $student_data1 = file(self::$dataa_store1);
+        $student_data = file(self::$datastore);
         echo "<b>ID NO | Name | Course | Phone</b><br>";
         
         foreach($student_data as $NewStudent){
@@ -33,6 +34,23 @@ class studentinfo1{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
