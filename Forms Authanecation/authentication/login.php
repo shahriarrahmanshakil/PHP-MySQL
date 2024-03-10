@@ -1,16 +1,16 @@
 <?php
-session_start();
-if(isset($_POST["btnlogin"])){
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+// session_start();
+// if(isset($_POST["btnlogin"])){
+//     $username = $_POST["username"];
+//     $password = $_POST["password"];
 
-    if($username == "shakil" && $password == "shakil123"){
-        $_SESSION["sessionName"] = $username;
-        header("location:reg.php");
-    }else{
-        $message = "<span style='color:red'>Username or Password is incorrect</span>";
-    }
-}
+//     if($username == "shakil" && $password == "shakil123"){
+//         $_SESSION["sessionName"] = $username;
+//         header("location:reg.php");
+//     }else{
+//         $message = "<span style='color:red'>Username or Password is incorrect</span>";
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
