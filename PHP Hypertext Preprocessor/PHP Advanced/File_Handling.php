@@ -1,0 +1,3 @@
+<?php
+    readfile("Document.txt");
+?>

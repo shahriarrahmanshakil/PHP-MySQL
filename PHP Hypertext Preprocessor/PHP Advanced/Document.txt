@@ -1,0 +1,4 @@
+Google limits Gemini AI image generation after controversial Nazi portrayal
+
+Google has announced its decision to prevent users from generating images of individuals on the newly introduced image generation feature in Gemini AI. This decision comes in response to the AI tool portraying Nazi-era soldiers as individuals from various ethnic backgrounds as per a prompt shown by a user in X, formerly Twitter.
+
