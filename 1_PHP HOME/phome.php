@@ -8,8 +8,9 @@
 <body>
     <h1>PHP HOME</h1>
     <?php
+        #php learning is start and try write and run some php code 
         echo "PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.<br>";
-        echo "PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP."
+        echo "PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.";
     ?>
 </body>
 </html>
