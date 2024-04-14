@@ -10,7 +10,7 @@
     <p>Short Hand If</p>
     <?php
         $a = 20;
-        if($a < 30) $b = "Short formate practice";
+        if($a < 30) $b = "Short formate practice<br>";
         echo $b;
     ?>
 

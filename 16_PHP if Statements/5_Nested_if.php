@@ -9,14 +9,15 @@
     <h1>PHP Nested if Statement</h1>
     <p>Nested If</p>
     <small>You can have if statements inside if statements, this is called nested if statements.</small>
+    <br><br>
     <?php
         $x = 43;
         if($x !== 90){
-            echo "Nested if Practice";
+            echo "Nested if Practice<br>";
             if($x < 14){
-                echo "this is wrong Number";
+                echo "this is wrong Number<br>";
             }else{
-                echo "Nested Else is Executed";
+                echo "Nested Else is Executed<br>";
             }
         }
     ?>
