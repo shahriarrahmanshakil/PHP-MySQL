@@ -2,7 +2,7 @@
     $connectwihDB = mysqli_connect('localhost','root','','crud');
     if(isset($_GET['delete_id'])){
         $delete_id = $_GET['delete_id'];
-        $deletequery = "DELETE FROM registration_form WHERE id =$delete_id";
+        $deletequery = "DELETE FROM registration_form WHERE id = $delete_id";
         if(mysqli_query($connectwihDB,$deletequery) == TRUE){
             header('location:view2.php');
         }
@@ -56,10 +56,10 @@
                 <td>$email</td>
                 <td>
                     <span class='edit'>
-                        <a href='edit2.php?edit_id=$id'>Edit</a>
+                        <a href='edit2.php ? edit_id=$id'> Edit </a>
                     </span>
                     <span class='delete'>
-                        <a href='view2.php?delete_id=$id'>Delete</a>
+                        <a href='view2.php ?  delete_id=$id'> Delete </a>
                     </span>
                 </td>
             </tr>";
