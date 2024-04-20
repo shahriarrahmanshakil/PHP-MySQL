@@ -36,18 +36,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup(Registration)Form</title>
-    <link rel="stylesheet" href="sginup.css">
-   
+    <link rel="stylesheet" href="sginup_style.css">
 </head>
 <body>
     <div style="display:flex;">
-        <div>
-            <img src="sginup.png" alt="sginup photo" height="500px" width="700px">
+        <div style="margin-top: 40px;">
+            <img src="sginup.png" alt="sginup photo" height="85%" width="730px">
         </div>
 
-        <div style="justify-content:space-between;">
+        <div style="justify-content:space-between; margin:20px 0px 0px 45px;">
+            <h4>Sign Up Form</h4>
             <form action="signup.php" method="post">
-              
                 <label for="first_name">First Name</label><br>
                 <input type="text" id="first_name" name="first_name" value="<?php if(isset($_POST['btnsubmit'])){ echo $firstname;} ?>" size="40">
                 <?php if(isset($_POST['btnsubmit'])){echo "<span style = 'color:red;'> $emptymessage_fn </span>";}?><br><br>
@@ -70,7 +69,7 @@
                 <input class="submit" type="submit" name="btnsubmit" value="Submit"> 
                 <p>
                     Have an Account?
-                    <button><a href='login.php' target="_blank">Login</a></button>
+                    <button><a href='login.php' target="_blank" style="text-decoration: none; color:bisque;">Login</a></button>
                 </p>
             </form>
         </div>

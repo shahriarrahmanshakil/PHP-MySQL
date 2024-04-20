@@ -8,11 +8,11 @@
 </head>
 <body>
     <div style="display: flex; justify-content:space-between;">
-        <div>
-            <img src="login.jpg" alt="Login form img">
+        <div style="margin-left: 60px;">
+            <img src="login.jpg" alt="Login form img" width="500px" height="500px">
         </div>
 
-        <div style="margin-top:100px; margin-right:30px;">
+        <div style="margin-top:120px; margin-right:200px;">
             <form action="login.php" method="post">
                     <label for="log_email">Email</label><br>
                     <input type="email" id="log_email" name="log_email"><br><br>
