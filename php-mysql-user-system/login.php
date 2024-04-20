@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <style>
-        a{
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <form action="login.php" method="post">
-        <label for="log_email">Email</label><br>
-        <input type="email" id="log_email" name="log_email"><br><br>
-        <label for="log_password">Password</label><br>
-        <input type="password" id="log_password" name="log_password"><br><br>
-        <input type="submit" name="logbtn" value="Login">
-    </form>
-    <p>
-        Not have an Account?
-        <button><a href='signup.php' target="_blank">Signup</a></button>
-    </p>
+    <div style="display: flex; justify-content:space-between;">
+        <div>
+            <img src="login.jpg" alt="Login form img">
+        </div>
+
+        <div style="margin-top:100px; margin-right:30px;">
+            <form action="login.php" method="post">
+                    <label for="log_email">Email</label><br>
+                    <input type="email" id="log_email" name="log_email"><br><br>
+                    <label for="log_password">Password</label><br>
+                    <input type="password" id="log_password" name="log_password"><br><br>
+                    <input type="submit" name="logbtn" value="Login">
+                    <p>
+                        Not have an Account?
+                        <button><a href='signup.php' target="_blank">Sign up</a></button>
+                    </p>  
+            </form>
+        </div>
+    </div>
+   
 </body>
 </html>
