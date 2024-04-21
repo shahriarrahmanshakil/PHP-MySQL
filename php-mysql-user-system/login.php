@@ -20,6 +20,7 @@
         if(!empty($logemail) && !empty($logpassword)){
             $selectdata = "SELECT * FROM signup_form 
                            WHERE email = '$logemail' AND password = '$md5_logpassword' ";
+                           
             if(mysqli_query($connectwithDB,$selectdata) == TRUE ){
                 $_SESSION['login'] = 'login success';
                 header('location:dashboard.php');
