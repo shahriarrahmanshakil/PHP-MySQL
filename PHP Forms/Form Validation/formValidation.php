@@ -1,3 +1,16 @@
+<?php
+    if(isset($_POST['btnsubmit']))
+    {
+         $_POST['name'];
+         $_POST['email'];
+         $_POST['website'];
+         $_POST['comment'];
+         $_POST['gender'];
+        
+
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +25,7 @@
         <input type="text" id="name" name="name" size="30"><br><br>
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email" size="30"><br><br>
-        <label for="website">WEbsite</label><br>
+        <label for="website">Website</label><br>
         <input type="text" id="website" name="website" size="30"><br><br>
         <label for="comment">Comment</label><br>
         <textarea name="comment" id="comment" cols="30" rows="5" placeholder="comment here"></textarea><br><br>
