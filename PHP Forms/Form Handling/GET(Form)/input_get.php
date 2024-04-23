@@ -6,7 +6,7 @@
     <title>form handling by $_GET Method</title>
     <style>
         input[type=submit]{
-            width: 170px;
+            width: 180px;
             color: green;
         }
     </style>

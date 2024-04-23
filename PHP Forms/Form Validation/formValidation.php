@@ -29,7 +29,7 @@
         <input type="text" id="website" name="website" size="30"><br><br>
         <label for="comment">Comment</label><br>
         <textarea name="comment" id="comment" cols="30" rows="5" placeholder="comment here"></textarea><br><br>
-        <label for="gender"> Gender : </label>
+        <label for="gender">Gender :</label>
         <input type="radio" id="male" name="gender">
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender">
