@@ -10,7 +10,7 @@
          }else{
             $name = $_POST["name"];
             if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-            $nameerror = "Only letters and white space allowed";
+               $nameerror = "Only letters and white space allowed";
             }
          }
 
@@ -18,12 +18,18 @@
             $emailerror = "Email is Required";
          }else{
             $email = $_POST["email"];
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+               $emailerror = "Invalid email format";
+             }
          }
         
          if(empty($_POST['website'])){
             $website = "";
          }else{
-            $website = $_POST["website"];
+            $website = $_POST['website'];
+            if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+               $website_error = "Invalid URL";
+             }
          }
 
          if(empty($_POST['comment'])){
@@ -66,7 +72,8 @@
         <span class ='error'><?php echo $emailerror; ?></span><br><br>
 
         <label for="website">Website</label><br>
-        <input type="text" id="website" name="website" size="30"><br><br>
+        <input type="text" id="website" name="website" size="30">
+        <span class ='error'><?php echo $website_error; ?></span><br><br>     
 
         <label for="comment">Comment</label><br>
         <textarea name="comment" id="comment" cols="30" rows="5" placeholder="comment here"></textarea><br><br>
