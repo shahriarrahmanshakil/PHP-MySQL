@@ -16,6 +16,8 @@
     <?php
         require("form.php");
     ?>
-
+    <?php
+        require_once("footer.php");
+    ?>
 </body>
 </html>
