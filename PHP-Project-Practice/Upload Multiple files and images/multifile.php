@@ -2,6 +2,7 @@
     if(isset($_POST['btnsubmit'])){
         
         $totalFile = count($_FILES['file']['name']);
+        
         for($i = 0; $i < $totalFile; $i++){
             $fileName = $_FILES['file']['name'][$i];
             $tmpName = $_FILES['file']['tmp_name'][$i];
