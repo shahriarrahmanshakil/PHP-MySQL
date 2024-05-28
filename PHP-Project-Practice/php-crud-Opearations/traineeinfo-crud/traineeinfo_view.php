@@ -1,6 +1,6 @@
 <?php
     $connectwithdb = mysqli_connect('localhost','root','','learning_php_mysql');
-    if($_GET['delete_id']){
+    if(isset($_GET['delete_id'])){
         $delete_id = $_GET['delete_id'];
         $traineeinfo_delete = "DELETE FROM traineeinfo WHERE id=$delete_id";
         if(mysqli_query($connectwithdb,$traineeinfo_delete) == TRUE){
@@ -53,7 +53,7 @@
                     <td>$round</td>
                     <td>
                         <span> 
-                            <a href='traineeinfo_edit.php?id=$id' target='blank'>
+                            <a href='traineeinfo_edit.php?edit_id=$id' target='blank'>
                                 Edit
                             </a>
                         </span>
