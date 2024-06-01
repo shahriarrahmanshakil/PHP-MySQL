@@ -9,11 +9,16 @@
 
     ////////////////////////////////////////////
     
-    //using auto loading function 
-
-    function __autoload($class){
-        require "classes/". $class .".php";
+    //using auto_loading function 
+    
+    function my_autoloader($class) {
+        include 'classes/' . $class . '.class.php';
     }
-
-
+    
+    if (!function_exists('spl_autoload_register')) {
+        spl_autoload_register('my_autoloader');
+    } else {
+        echo "spl_autoload_register() already defined.";
+    }
+    new first();
 ?>
