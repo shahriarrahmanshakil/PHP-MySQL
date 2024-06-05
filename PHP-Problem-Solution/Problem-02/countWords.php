@@ -10,8 +10,16 @@
     You need to read the data from a file. */
 
     //slove
-    $myfile = readfile(countWords.txt);
-    echo $myfile;
+    $myfile = readfile('countWords.txt');
+    $words = str_word_count(file_get_contents('countWords.txt'));
+    echo "<br>";
+    echo 'Total Number of Words = '.$words;
+?>
 
+<?php
+    // $count = 0; 
+    // $file = fopen('countWords.txt','r');
 
+    
+    // // echo fread($file, filesize('countWords.txt'));
 ?>
