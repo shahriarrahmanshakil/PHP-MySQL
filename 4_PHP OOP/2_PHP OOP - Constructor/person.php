@@ -35,7 +35,7 @@
         public $name;
         public $address;
 
-        function __construct($nam="abc",$add='xyz'){
+        function __construct($nam="abc",$add='xyz'){     //default value set
             $this->name = $nam;
             $this->address = $add;
         }
