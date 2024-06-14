@@ -1,0 +1,10 @@
+{
+    "window.autoDetectColorScheme": true,
+    "editor.defaultColorDecorators": true,
+    "editor.experimentalInlineEdit.enabled": true,
+    "editor.experimentalInlineEdit.backgroundColoring": true,
+    "npm.enableRunFromFolder": true,
+    "prettier.bracketSameLine": true,
+    "prettier.enableDebugLogs": true,
+    "prettier.jsxSingleQuote": false
+}
