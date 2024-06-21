@@ -50,6 +50,4 @@
     $Banana = new newFruit("Banana","Yellow","50g","Sobri");
     echo $Banana->newFruitsInfo();
 
-
-
 ?>
