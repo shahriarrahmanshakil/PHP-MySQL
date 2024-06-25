@@ -41,4 +41,18 @@
     echo "<br>";
 
     ////////////////////////////////////////////////////////////////////////////////
+
+    class X{
+        public static function x(){
+            return "This is x function";
+        }
+    }
+
+    class Y extends X{
+        public $a;
+        public function __construct(){
+           echo $this->a = parent::x();
+        }
+    }
+    new Y();
 ?>
