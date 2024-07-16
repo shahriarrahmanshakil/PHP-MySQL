@@ -11,7 +11,7 @@ $connectWithDB = mysqli_connect('localhost','root','','learning_php_mysql');
        
        if($dataQuery = mysqli_query($connectWithDB, $dataInsert) == TRUE){
             echo "Data Inserted";
-            header("location :employeinfo.php");
+            // header("location :employeinfo.php");
        }
     }
 ?>
