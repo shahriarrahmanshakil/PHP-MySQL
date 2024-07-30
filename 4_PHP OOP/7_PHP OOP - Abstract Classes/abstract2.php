@@ -42,10 +42,4 @@
     $honda = new honda("Honda");
     echo $honda->intro();
 
-
-
-
-
-
-
 ?>
