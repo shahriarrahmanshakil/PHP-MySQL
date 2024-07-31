@@ -14,10 +14,10 @@
     class B extends A{
         use test;
 
-        // public function hello()
-        // {
-        //     echo "Hello from class B";
-        // }
+        public function hello()
+        {
+            echo "Hello from class B";
+        }
     }
 
     $b1 = new B();
