@@ -1,3 +1,15 @@
+<?php
+    if(isset($_POST['btnsubmit'])){
+        $trainee_id = $_POST['t_id'];
+        $trainee_name = $_POST['name'];
+        $trainee_batch = $_POST['batch'];
+
+        $sql = "INSERT INTO ";
+
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
