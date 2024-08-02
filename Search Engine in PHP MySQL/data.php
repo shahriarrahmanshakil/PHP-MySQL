@@ -8,9 +8,7 @@
         $sql = "INSERT INTO student_information (trainee_id,name,batch)
                 VALUES('$trainee_id','$trainee_name','$trainee_batch')";
         $query = $db_connection->query($sql);
-
     }
-
 ?>
 
 <!DOCTYPE html>
