@@ -1,10 +1,13 @@
 <?php
+    require("db_connection.php");
     if(isset($_POST['btnsubmit'])){
         $trainee_id = $_POST['t_id'];
         $trainee_name = $_POST['name'];
         $trainee_batch = $_POST['batch'];
 
-        $sql = "INSERT INTO ";
+        $sql = "INSERT INTO student_information (trainee_id,name,batch)
+                VALUES('$trainee_id','$trainee_name','$trainee_batch')";
+        $query = $db_connection->query($sql);
 
     }
 
