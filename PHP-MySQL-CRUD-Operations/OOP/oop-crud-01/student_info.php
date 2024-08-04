@@ -15,7 +15,7 @@
                         <h1>Student Registration Form</h1>
                     </div>
                     <div class="card-body">
-                        <form action="">
+                        <form action="" method="post" enctype="multipart/form-data">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
 
