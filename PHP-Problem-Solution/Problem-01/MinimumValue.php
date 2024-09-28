@@ -4,7 +4,7 @@
     echo "<br>";
     
     $value1 = array(10,20,-7,30);
-<<<<<<< HEAD
+
     $minvalue1 = abs(min($value1));
     echo "Minimum Absolute value = " . $minvalue1;
 
@@ -16,12 +16,6 @@
 
 
     
-=======
-    $minvalue = abs($value1);
-    //  $minvaluewithabs = abs($minvalue);
-    echo $minvalue; 
-    echo "hello world";
-    echo "Bangladesh";
->>>>>>> 5c36cc0 (file added)
+
 
 ?>
