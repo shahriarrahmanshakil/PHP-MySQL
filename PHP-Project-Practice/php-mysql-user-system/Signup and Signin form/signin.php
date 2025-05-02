@@ -1,7 +1,7 @@
 <?php
 $connect = mysqli_connect('localhost','root','','signin_signup');
     if($_POST['btnsubmit']){
-        $_POST['usname'] = 
+       $usname =  $_POST['usname']; 
     }
 
 ?>
